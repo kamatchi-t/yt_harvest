@@ -180,7 +180,7 @@ def main():
               video_df['duration']=[responsevd['items'][0]['contentDetails']['duration']]
               video_df['thumbnail']=[responsevd['items'][0]['snippet']['thumbnails']['default']['url']]
               video_df['caption_status']=[responsevd['items'][0]['contentDetails']['caption']]
-              video_df['playlist_id']=playlist_df['playlist_id']
+              
                 #writing the dataframe contents to a csv file to be used in the next sections of the code        
               video_df.to_csv("E:/GUVI/Guvi/video_df.csv",index=False)
               st.dataframe(video_df)
